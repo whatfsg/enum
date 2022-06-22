@@ -16,16 +16,23 @@ import java.util.Scanner;
 public class ArithmeticBase 
 {
  public double x,y;
-    double calculate(double x, double y) 
+ public enum string1{
+     plus,
+     minus,
+     times,
+     divide
+    
+ }
+    double calculate(double x, double y)
         {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter arithmetic operation to Perform: ");
-        String s= sc.next();
-        switch (s.toUpperCase()) 
+        string1 s = new string1();
+        switch (string1) 
         {
-            case "PLUS":
+            case plus:
                 return x + y;
-            case "MINUS":
+            case ()):
                 return x - y;
             case "TIMES":
                 return x * y;
